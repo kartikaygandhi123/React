@@ -43,13 +43,13 @@ setText(newText.join(" "))
   <h1>{props.heading}</h1>
   <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'grey':'white', color:props.mode==='dark'?'white':'black'}}  id="myBox" rows="8"></textarea>
 </div>
-<button className="btn btn-primary mx-2" onClick={handleUpCase}>Convert to uppercase</button>
+<button className="btn btn-primary mx-1 my-1" onClick={handleUpCase}>Convert to uppercase</button>
 
-<button className="btn btn-primary mx-2" onClick={handleLowCase}>Convert to Lower case</button>
+<button className="btn btn-primary mx-1 my-1" onClick={handleLowCase}>Convert to Lower case</button>
 
-<button className="btn btn-primary mx-2" onClick={handleTextClear}>Clear The Text</button>
+<button className="btn btn-primary mx-1 my-1" onClick={handleTextClear}>Clear The Text</button>
 
-<button className="btn btn-primary my-2 mx-2" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
+<button className="btn btn-primary my-1 mx-1" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
 
 
     </div>
