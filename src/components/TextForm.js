@@ -57,7 +57,7 @@ setText(newText.join(" "))
     <div className="container my-2" style={{color: props.mode==='dark'?'white':'black'}}>
 
 <h2>Your Text Summary</h2>
-<p>{text.split(" ").length} words, {text.length} characters</p>
+<p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words, {text.length} characters</p>
 <p>{0.008*text.split(" ").length} Minutes Read</p>
     
 <h3>Preview Text</h3>
